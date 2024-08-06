@@ -1,0 +1,129 @@
+.navbar img {
+    width: 150px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 100px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-connect {
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, rgba(255, 166, 0, 0.704)20%, rgba(199, 8, 199, 0.994) 90%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 30px;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.nav-menu img {
+    width: 61px;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+ .nav-mob-close {
+    display: none;
+    height: 30px;
+    width: 30px;
+}
+
+.nav-mob-open {
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+
+ @media (max-width:1440px) {
+    .navbar{
+        margin: 20px 50px;
+    }
+    .nav-menu{
+        gap: 35px;
+    }
+    .nav-connect{
+        font-size: 18px;
+        padding: 10px 24px;
+    }
+} 
+@media (max-width:1083px) {
+    .navbar{
+        margin: 18px 25px;
+    }
+    .nav-menu{
+        gap: 25px;
+    }
+    .nav-connect{
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+ } 
+ @media (max-width:950px) {
+    .navbar{
+        margin: 18px 20px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+    .nav-mob-close{
+        display: block;
+        position: absolute;
+        top: 30px;
+        width: 30px;
+        right: 71px;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #1f0016;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+        padding-top:80px;
+    }
+    .nav-menu li{
+        font-size:25px ;
+        padding-left: 30px;
+        flex-direction: row;
+        gap: 20px;
+       
+    }
+}   
+
